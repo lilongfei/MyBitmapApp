@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">MyBitmapApp</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="default_camera">Default Camera</string>
+
+    <string name="custom_camera">Custom Camera</string>
+
+    <string name="picture_progress">Picture Progress</string>
+
+    <string name="edit_bitmap">Edit Bitmap</string>
+
+    <string name="go_to">></string>
+
+    <string name="bitmap">Bitmap</string>
+
+    <string name="title_activity_default_camera">DefaultCameraActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="album">Album</string>
+
+    <string name="camera">Camera</string>
+
+    <string name="edit">Edit</string>
+
+    <string name="edit_info">Info</string>
+
+    <string name="edit_rotate">Rotate</string>
+
+    <string name="edit_zoom">Zoom</string>
+
+    <string name="edit_light">Light</string>
+
+    <string name="edit_saturation">Saturation</string>
+
+    <string name="edit_combine">Combine</string>
+
+    <string name="previous">Previous</string>
+
+    <string name="next">Next</string>
+
+    <string name="progress">Progress</string>
+
+    <string name="synthesis">Synthesis</string>
+
+    <string name="no">NO</string>
+
+    <string name="ok">OK</string>
+
+    <string name="yes">YES</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="input_name">Input Name</string>
+
+    <string name="image_information">Image Information</string>
+
+    <string name="choose_save_type">Choose Save Type</string>
+
+    <string name="sd_card">SD Card</string>
+
+    <string name="media_store">MediaStore</string>
+
+    <string name="please_input_name">Please Input Name!</string>
+
+    <string name="hint_sd_card">SD Card Need A Name</string>
+
+    <string name="title_activity_edit_bitmap">EditBitmapActivity</string>
+
+    <string name="exif">EXIF---</string>
+    <string name="tag_aperture">Aperture:</string>
+    <string name="tag_datetime">Datetime:</string>
+    <string name="tag_exposure_time">ExposureTime:</string>
+    <string name="tag_flash">Flash:</string>
+    <string name="tag_focal_length">FocalLength:</string>
+    <string name="tag_image_length">ImageLength:</string>
+    <string name="tag_image_width">ImageWidth:</string>
+    <string name="tag_iso">ISO:</string>
+    <string name="tag_make">Make:</string>
+    <string name="tag_model">Model:</string>
+    <string name="tag_orientation">Orientation:</string>
+    <string name="default_str">xxx</string>
+
+    <string name="file_path">File Path:</string>
+    <string name="media_uri">Media Uri:</string>
+    <string name="file_name">File Name:</string>
+    <string name="description">Description:</string>
+    <string name="display_name">Display Name:</string>
+    <string name="size">Size:</string>
+    <string name="title">Title:</string>
+    <string name="mime_type">Mime Type:</string>
+    <string name="height">height:</string>
+    <string name="width">width:</string>
+    <string name="orientation">Orientation:</string>
+    <string name="title_activity_custom_camera">CustomCameraActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="setting">Setting</string>
+
+    <string name="label_delay">Delay</string>
+    <string name="hint_delay">Input Delay Time</string>
+    <string name="shoot">Shoot</string>
+    <string name="label_flashlight">Flashlight</string>
+    <string name="label_focus">Focus</string>
+    <string name="label_scene">Scene</string>
+    <string name="label_color_effect">Color Effect</string>
+    <string name="label_duo_camera">Duo Camera</string>
+    <string name="flashlight_close">Close</string>
+    <string name="flashlight_open">Open</string>
+    <string name="flashlight_auto">Auto</string>
+    <string name="flashlight_torch">Torch</string>
+    <string name="focus_auto">Auto</string>
+    <string name="focus_macro">Macro</string>
+    <string name="focus_continuousVideo">CVideo</string>
+    <string name="focus_continuousPicture">CPicture</string>
+    <string name="scene_auto">Auto</string>
+    <string name="scene_snow">Snow</string>
+    <string name="scene_night">Night</string>
+    <string name="scene_party">Party</string>
+    <string name="scene_beach">Beach</string>
+    <string name="scene_theatre">Theatre</string>
+    <string name="scene_candlelight">Candlelight</string>
+    <string name="scene_sunset">Sunset</string>
+    <string name="scene_fireworks">Fireworks</string>
+    <string name="scene_sports">Sports</string>
+    <string name="color_effect_none">none</string>
+    <string name="color_effect_mono">mono</string>
+    <string name="color_effect_negative">negative</string>
+    <string name="color_effect_solarize">solarize</string>
+    <string name="color_effect_sepia">sepia</string>
+    <string name="color_effect_posterize">posterize</string>
+    <string name="color_effect_whiteboard">whiteboard</string>
+    <string name="color_effect_blackboard">blackboard</string>
+    <string name="color_effect_aqua">aqua</string>
+    <string name="back_camera">Back Camera</string>
+    <string name="front_camera">Front Camera</string>
+    <string name="title_activity_picture_progress">PictureProgressActivity</string>
+
+    <string name="choose_picture">Choose Picture</string>
+    <string name="choose_picture1">Choose Picture1</string>
+    <string name="choose_picture2">Choose Picture2</string>
+
+    <string name="zoom_up">ZoomUp</string>
+    <string name="zoom_down">ZoomDown</string>
+    <string name="turn_left">TurnLeft</string>
+    <string name="turn_right">TurnRight</string>
+    <string name="light_up">LightUp</string>
+    <string name="light_down">LightDown</string>
+    <string name="contrast_up">ContrastUp</string>
+    <string name="contrast_down">ContrastDown</string>
+    <string name="saturation_up">SaturateUp</string>
+    <string name="saturation_down">SaturateDown</string>
+    <string name="mirror_x">MirrorX</string>
+    <string name="mirror_y">MirrorY</string>
+
+    <string name="synthesis_lighten">Lighten</string>
+    <string name="synthesis_darken">Darken</string>
+    <string name="synthesis_multiply">Multiply</string>
+    <string name="synthesis_screen">Screen</string>
+
+
+</resources>

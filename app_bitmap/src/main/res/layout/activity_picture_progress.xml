@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/green"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/picture_progress"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include_pictureProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_picture_progress"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/include_pictureSynthesis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_picture_synthesis"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+        <Button
+            android:id="@+id/btn_panelProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/progress"
+            android:textAllCaps="false"
+            android:textColor="@color/selector_text_color"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_panelSynthesis"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/synthesis"
+            android:textAllCaps="false"
+            android:textColor="@color/selector_text_color"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

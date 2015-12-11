@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="com.llf.mybitmapapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/green">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/bitmap"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/Line"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_defaultCamera"
+        style="@style/Item">
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="@string/default_camera" />
+
+        <TextView
+            style="@style/ItemGoTo"
+            android:text="@string/go_to" />
+
+    </RelativeLayout>
+
+    <ImageView style="@style/Line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_customCamera"
+        style="@style/Item">
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="@string/custom_camera" />
+
+        <TextView
+            style="@style/ItemGoTo"
+            android:text="@string/go_to" />
+
+    </RelativeLayout>
+
+    <ImageView style="@style/Line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_pictureProgress"
+        style="@style/Item">
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="@string/picture_progress" />
+
+        <TextView
+            style="@style/ItemGoTo"
+            android:text="@string/go_to" />
+
+    </RelativeLayout>
+
+    <ImageView style="@style/Line" />
+
+</LinearLayout>

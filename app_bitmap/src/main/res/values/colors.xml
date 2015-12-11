@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="blue">#3875D8</color>
+
+    <color name="black">#000000</color>
+
+    <color name="gray">#AAAAAA</color>
+
+    <color name="bg">#CCCCCC</color>
+
+    <color name="item_pressed">#AAAAAA</color>
+
+    <color name="green">#008800</color>
+
+    <color name="translucent">#00000000</color>
+
+    <color name="trans_bg">#66000000</color>
+
+</resources>

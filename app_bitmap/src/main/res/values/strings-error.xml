@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_camera_type">Can Not Find Camera Type.</string>
+    <string name="error_camera_null">Please Take A Picture First.</string>
+    <string name="error_camera_null2">Please Pick A Picture First.</string>
+    <string name="error_pick_picture1">Please Pick Picture1 First.</string>
+    <string name="error_pick_picture2">Please Pick Picture2 First.</string>
+    <string name="error_camera_data">Camera Error:Picture Data Is Empty.</string>
+    <string name="error_camera_delay">Delay Time Is 0~30s.</string>
+    <string name="error_camera_flash_mode">Has New Flash Mode.</string>
+    <string name="error_camera_focus_mode">Has New Focus Mode.</string>
+    <string name="error_camera_scene_mode">Has New Scene Mode.</string>
+    <string name="error_camera_color_effect_mode">Has New Color Effect Mode.</string>
+    <string name="error_camera_setting">Please Choose NO Or OK First.</string>
+    <string name="error_pick_picture">The Result Cannot Progress.</string>
+    <string name="error_zoom_up">The Image is biggest.</string>
+    <string name="error_zoom_down">The Image is smallest.</string>
+    <string name="error_light_up">The light is biggest.</string>
+    <string name="error_light_down">The light is smallest.</string>
+    <string name="error_contrast_up">The contrast is biggest.</string>
+    <string name="error_contrast_down">The contrast is smallest.</string>
+</resources>

@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/input_name"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/green" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_labelDelay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_delay"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_delay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/tv_labelDelay"
+                    android:gravity="center"
+                    android:hint="@string/hint_delay"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+            <ImageView style="@style/Line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_labelFlashlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_flashlight"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tv_labelFlashlight"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none">
+
+                    <RadioGroup
+                        android:id="@+id/rg_flashGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_flashClose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/flashlight_close"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_flashOpen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/flashlight_open"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_flashAuto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/flashlight_auto"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_flashTorch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/flashlight_torch"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <ImageView style="@style/Line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_labelFocusMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_focus"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tv_labelFocusMode"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none">
+
+                    <RadioGroup
+                        android:id="@+id/rg_focusGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_focusAuto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/focus_auto"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_focusMacro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/focus_macro"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_focusContinuousVideo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/focus_continuousVideo"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_focusContinuousPicture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/focus_continuousPicture"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <ImageView style="@style/Line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_labelSceneMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_scene"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tv_labelSceneMode"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none">
+
+                    <RadioGroup
+                        android:id="@+id/rg_SceneGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_SceneAuto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scene_auto"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_SceneSnow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scene_snow"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_SceneNight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scene_night"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_SceneParty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scene_party"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_SceneBeach"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scene_beach"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_SceneTheatre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scene_theatre"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_SceneCandlelight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scene_candlelight"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_SceneSunset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scene_sunset"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_SceneFireworks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scene_fireworks"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_SceneSports"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scene_sports"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <ImageView style="@style/Line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_labelColorEffectMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_color_effect"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tv_labelColorEffectMode"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none">
+
+                    <RadioGroup
+                        android:id="@+id/rg_ColorEffectGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_ColorEffectNone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/color_effect_none"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ColorEffectMono"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/color_effect_mono"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ColorEffectNegative"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/color_effect_negative"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ColorEffectSolarize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/color_effect_solarize"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ColorEffectSepia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/color_effect_sepia"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ColorEffectPosterize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/color_effect_posterize"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ColorEffectWhiteboard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/color_effect_whiteboard"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ColorEffectBlackboard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/color_effect_blackboard"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ColorEffectAqua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/color_effect_aqua"
+                            android:visibility="gone" />
+
+                    </RadioGroup>
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <ImageView style="@style/Line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_labelDuoCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_duo_camera"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_DuoCameraGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_labelDuoCamera"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_backCamera"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/back_camera"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb_frontCamera"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/front_camera"
+                        android:visibility="gone" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_down_bg"
+            android:text="@string/ok"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>
