@@ -8,9 +8,9 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Intent intent;
-    private View btnDefaultCamera;
-    private View btnCustomCamera;
-    private View btnPictrueProgress;
+    private View   btnDefaultCamera;
+    private View   btnCustomCamera;
+    private View   btnPictureProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
         btnDefaultCamera = findViewById(R.id.rl_defaultCamera);
         btnCustomCamera = findViewById(R.id.rl_customCamera);
-        btnPictrueProgress = findViewById(R.id.rl_pictureProgress);
+        btnPictureProgress = findViewById(R.id.rl_pictureProgress);
         btnDefaultCamera.setOnClickListener(this);
         btnCustomCamera.setOnClickListener(this);
-        btnPictrueProgress.setOnClickListener(this);
+        btnPictureProgress.setOnClickListener(this);
     }
 
     @Override
